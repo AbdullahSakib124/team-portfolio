@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Website Using on html and css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Ads</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="me copy.png" class="pic">
+            <div id="circle">
+                <div class="feature one">
+                    
+                    <div>
+                        <h1>Name</h1>
+                        <p>MD.Abdullah Sakib</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    
+                    <div>
+                        <h1>Education</h1>
+                        <p>SSC passed on 2020,Now Study In<br>Diploma Engineeaing on CSE </p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    
+                    <div>
+                        <h1>Dream</h1>
+                        <p>work as a Full Stack Web Devoloper in Freelancer.com</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    
+                    <div>
+                        <h1>Experience</h1>
+                        <p>I Have no Experience Like to say".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="arow.png" id="upBtn">
+            <h1>Profile</h1>
+            <h3 id="downBtn">Click</h3>
+        </div>
+
+        <script>
+            var circle = document.getElementById("circle");
+            var upBtn = document.getElementById("upBtn");
+            var downBtn = document.getElementById("downBtn");
+
+            var rotateValue = circle.style.transform;
+            var rotateSum;
+
+
+            upBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(-90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            } 
+            downBtn.onclick = function()
+            {
+                rotateSum = rotateValue + "rotate(90deg)";
+                circle.style.transform = rotateSum;
+                rotateValue = rotateSum;
+            }
+
+        </script>
+    </div>
+</body>
+</html>
